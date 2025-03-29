@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background-color: #9dc09e;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2em;
+  }
+  /* Style for the About section container */
+.about-section {
+  background-color: #f9f9f9; /* Soft background color for readability */
+  padding: 40px; /* Space around the content */
+  border-radius: 10px; /* Rounded corners for a clean look */
+  text-align: left; /* Align text to the left for a professional feel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for the heading */
+.about-section h1 {
+  font-size: 32px; /* Large font for the title */
+  color: #333; /* Dark color for contrast */
+  margin-bottom: 20px; /* Space below the heading */
+  font-weight: bold; /* Make the title prominent */
+}
+
+/* Style for the paragraph */
+.about-section p {
+  font-size: 18px; /* Comfortable font size for reading */
+  color: #555; /* Neutral text color */
+  line-height: 1.8; /* Spacing between lines */
+  margin-bottom: 15px; /* Space below the paragraph */
+}
+
+/* Optional styling for images in the section */
+.about-section img {
+  max-width: 100%; /* Ensure the image is responsive */
+  border-radius: 10px; /* Rounded corners for images */
+  margin-top: 20px; /* Space above the image */
+}
+
+/* Hover effect for heading */
+.about-section h1:hover {
+  color: #007bff; /* Change heading color on hover */
+  cursor: pointer; /* Show pointer cursor */
+}
+
+  label {
+    font-size: 16px;         /* Adjust font size */
+    color: #131315;            /* Text color */
+    font-weight: bold;      /* Make the text bold */
+    margin-top: 10px;      /* Add space above the label */
+    font-display: swap;    /* Use swap for better performance */
+    text-align:left;      /* Align text to the  *
+    margin-bottom: 8px;     /* Add space below the label */
+    display: block;         /* Display the label as a block element */
+  }
+  
+  label:hover {
+    color: #0a315b;         /* Change color on hover */
+    cursor: pointer;        /* Show pointer cursor on hover */
+  }
+  h3 {
+    font-size: 24px;        /* Adjust font size */
+    color: #2727ea;         /* Text color */
+    font-weight: bold;      /* Make the text bold */
+    margin-top: 10px;      /* Add space above the heading */
+    font-display: swap;     /* Use swap for better performance */
+    text-align:left;       /* Align text to the left */
+    margin-bottom: 8px;     /* Add space below the heading */
+  }
+
+
+
+  
+
+
+  
+
+  
+  footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #4faf4c;
+    color: white;
+  }
