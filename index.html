@@ -38,7 +38,7 @@
     </p>
     <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
       <a href="https://www.pexels.com/">
-        <img src="https://images.pexels.com/photos/4549411/pexels-photo-4549411.jpeg" alt="My Portfolio" style="width: 600px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg" alt="Software Engineer Collaboration" style="width: 600px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
       </a>
       <blockquote style="font-style: italic; color: #333; font-size: 1.1em; max-width: 400px; line-height: 1.6; text-align: justify; border-left: 4px solid #1a8dda; padding-left: 15px;">
       "Code is like humor. When you have to explain it, it’s bad." - Cory House
@@ -72,20 +72,24 @@ I am excited to embark on this journey and connect with like-minded individuals 
     <li style="background-color: #042205; color: #fff; padding: 10px 20px; border-radius: 5px; font-size: 1.2em; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
       <img src="images/html-icon.png" alt="HTML Icon" style="width: 20px; height: 20px; margin-right: 10px; vertical-align: middle;">
       HTML
+      HTML
     </li>
       <li style="background-color: #042205; color: #fff; padding: 10px 20px; border-radius: 5px; font-size: 1.2em; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
         <img src="images/css-icon.png" alt="CSS Icon" style="width: 20px; height: 20px; margin-right: 10px; vertical-align: middle;">
+        CSS
         CSS
       </li>
     </li>
     <li style="background-color: #010e02; color: #fff; padding: 10px 20px; border-radius: 5px; font-size: 1.2em; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
       <img src="images/javascript-icon.png" alt="JavaScript Icon" style="width: 20px; height: 20px; margin-right: 10px; vertical-align: middle;">
       JavaScript
+      JavaScript
     </li>
       JavaScript
     </li>
     <li style="background-color: #010a01; color: #fff; padding: 10px 20px; border-radius: 5px; font-size: 1.2em; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
       <img src="images/python-icon.png" alt="Python Icon" style="width: 20px; height: 20px; margin-right: 10px; vertical-align: middle;">
+      Python
       Python
     </li>
       Python
@@ -139,13 +143,18 @@ I am excited to embark on this journey and connect with like-minded individuals 
         Currently enrolled in a comprehensive Software Engineering program at <span style="font-weight: bold; color: #1a8dda;">PLP Academy</span>, where I am honing my skills in coding, problem-solving, and innovative software development.
       </p>
       <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
-        <img src="images/education.jpg" alt="Education" style="width: 300px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <a href="https://www.plpacademy.com/">
+            <img src="https://images.pexels.com/photos/3134032/pexels-photo-3134032.jpeg?w=400&h=auto&compress=1" alt="PLP Academy" style="width: 400px; height: auto; border-radius: 10px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);">
+        </a>
+        <a href="https://www.pixel.com/">
+          <img src="https://images.pexels.com/photos/9829488/pexels-photo-9829488.jpeg" alt="certification" style="width: 600px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        </a>
         <blockquote style="font-style: italic; color: #333; font-size: 1.1em; max-width: 400px; line-height: 1.6; text-align: justify; border-left: 4px solid #4CAF50; padding-left: 15px;">
           "Education is the most powerful weapon which you can use to change the world." - Nelson Mandela
         </blockquote>
       </div>
     </section>
-    <h3>GET IN TOUCH WITH US</h3>
+    <h3>GET IN TOUCH WITH ME</h3>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required placeholder="joe">
     <br>
@@ -158,9 +167,23 @@ I am excited to embark on this journey and connect with like-minded individuals 
     <label for ="message">Message:</label>
     <textarea id="message" name="message" required></textarea>
      <br>
-    <button type="submit">Submit</button>
+    <button type="submit" onclick="handleSubmit()">Submit</button>
+    <script>
+      function handleSubmit() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone number').value;
+      const message = document.getElementById('message').value;
+
+      if (name && email && message) {
+        alert(`Form submitted successfully!\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`);
+      } else {
+        alert('Please fill out all required fields.');
+      }
+      }
+    </script>
     <br>    
-    <button type="cancel">cancel</button>
+    <button type="button" onclick="window.location.reload();">Cancel</button>
     
 
 
@@ -183,11 +206,7 @@ I am excited to embark on this journey and connect with like-minded individuals 
       <span style="color: #4CAF50; font-size: 1.1em;">Nairobi, Kenya</span>
     </p>
   </section>
-  <a href="https://www.linkedin.com/in/maryanne" target="_blank" style="text-decoration: none; color: #fff;">
-    <i class="fab fa-linkedin" style="font-size: 1.2em; margin-right: 5px;"></i> LinkedIn
-  </a>
-  <a href="https://www.instagram.com/maryanne" target="_blank" style="text-decoration: none; color: #fff;">
-    <i class="fab fa-instagram" style="font-size: 1.2em; margin-right: 5px;"></i> Instagram
+
   </a>
   <footer>
     <p style="text-align: center; font-size: 1.1em; color: #fff; background-color: #4CAF50; padding: 10px; margin: 0;">
@@ -203,6 +222,9 @@ I am excited to embark on this journey and connect with like-minded individuals 
 
 
 
-<a href="https://example.com">
-  <img src="https://via.placeholder.com/150" alt="HTML Example Image">
+<a href="https://www.linkedin.com/in/maryanne" target="_blank" style="text-decoration: none; color: #fff;">
+  <i class="fab fa-linkedin" style="font-size: 1.2em; margin-right: 5px;"></i> LinkedIn
+</a>
+<a href="https://www.instagram.com/maryanne" target="_blank" style="text-decoration: none; color: #fff;">
+  <i class="fab fa-instagram" style="font-size: 1.2em; margin-right: 5px;"></i> Instagram
 </a>
