@@ -4,6 +4,32 @@ body {
     padding: 0;
     color: #333;
   }
+  body {
+    margin: 0;
+    overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+
   
   header {
     background-color: #9dc09e;
@@ -21,7 +47,36 @@ body {
   section {
     padding: 2em;
   }
-  /* Style for the About section container */
+
+  @media (max-width: 768px) {
+    .example-class {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .example-class h1 {
+        font-size: 20px;
+    }
+    .example-class p {
+        font-size: 12px;
+    }
+    .example-class img {
+        width: 100%;
+        height: auto;
+    }
+    .example-class h1 {
+        font-size: 24px;
+    }
+    .example-class p {
+        font-size: 14px;
+    }
+    .example-class img {
+        width: 100%;
+        height: auto;
+    }
+    .example-class h1 {
+        font-size: 24px;
+    }
+ Style for the About section container */
 .about-section {
   background-color: #f9f9f9; /* Soft background color for readability */
   padding: 40px; /* Space around the content */
