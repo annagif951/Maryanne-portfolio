@@ -76,7 +76,9 @@ img {
     .example-class h1 {
         font-size: 24px;
     }
- Style for the About section container */
+} /* Close the @media query */
+
+/* Style for the About section container */
 .about-section {
   background-color: #f9f9f9; /* Soft background color for readability */
   padding: 40px; /* Space around the content */
