@@ -7,7 +7,12 @@ body {
   body {
     margin: 0;
     overflow-x: hidden;
+
+  }
+  body {
+  overflow-x: hidden;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -46,7 +51,25 @@ img {
   
   section {
     padding: 2em;
-  }
+  }.nav-links {
+    display: none;
+}
+
+.hamburger-menu {
+    display: block;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+}
+
 
   @media (max-width: 768px) {
     .example-class {
