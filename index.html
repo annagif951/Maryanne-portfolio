@@ -3,165 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to my portfolio! I am a passionate software engineer with a focus on creating innovative solutions. Explore my projects and skills.">
-  <meta name="keywords" content="portfolio, software engineer, projects, skills, contact">
-  <link rel="stylesheet" href="css/style.css">
-  
-  <title>Maryanne-portfolio </title>
+  <title>Maryanne Portfolio</title>
 </head>
-<body>
-  <header>
-    <h1 style="font-size: 3em; color: #1a8dda; text-align: center; margin-top: 20px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); font-family: 'Arial', sans-serif;"></h1>
-      <span style="font-size: 4em; color: #12440f;">Welcome to My Portfolio</span>
+
+<!-- CSS Styles -->
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: black">  
+  <header style=" padding: 50px 20px; color: white; text-align: center; border-bottom: 5px solid mediumpurple;">
+      <h1 style="font-size: 4em; font-weight: bold; margin-bottom: 20px; color: mediumpurple; text-align: center; text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.8), 0 0 15px mediumpurple; animation: pulse 2s infinite;">Welcome to Maryanne's Portfolio</h1>
       <style>
-        @keyframes fadeIn {
-          from {
-        opacity: 0;
-          }
-          to {
-        opacity: 1;
-          }
-        }
-      </style>
-    </h1>
-     
-    <p>
-    Discover my journey, skills, and projects as a passionate software engineer.
-    </p>
-    
-    <nav style="background-color: none; padding: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"></nav>
-      <ul style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; gap: 20px; margin: 0; justify-content: center; align-items: center;">
-        <li style="margin: 0;"></li>
-          <a href="About me .html" style="text-decoration: underline; color: #1a8dda; font-weight: bold; font-size: 1.2em; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s, color 0.3s;">
-            About
-          </a>
-        </li>
-        <li style="margin: 0;">
-          <a href="css/Education .html" style="text-decoration: underline; color: #1a8dda; font-weight: bold; font-size: 1.2em; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s, color 0.3s;">
-            Education
-          </a>
-        </li>
-        <li style="margin: 0;">
-          <a href="skills.html" style="text-decoration: underline; color: #1a8dda; font-weight: bold; font-size: 1.2em; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s, color 0.3s;">
-            Skills
-          </a>
-        </li>
-        <li style="margin: 0;">
-          <a href="resume .html" style="text-decoration: underline; color: #1a8dda; font-weight: bold; font-size: 1.2em; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s, color 0.3s;">
-            Resume
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <style>
-      nav ul li a:hover {
-        background-color: #1a8dda;
-        color: #fff;
+      @keyframes pulse {
+      0%, 100% {
+        text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.8), 0 0 15px mediumpurple;
       }
-    </style></li>
-      <style>
-      nav ul li a {
-        text-decoration: none;
-        color: #1a8dda;
-        font-size: 1.2em;
-        font-weight: bold;
-        transition: color 0.3s;
+      50% {
+        text-shadow: 3px 3px 20px rgba(255, 255, 255, 1), 0 0 25px mediumpurple;
       }
-      nav ul li a:hover {
-        color: #ffcc00;
       }
-      @media (min-width: 768px) {
-        nav ul {
-        flex-direction: row;
-        gap: 20px;
-        }
-      }
-      </style>
-    </nav>
-        
-    <!--header region-->
-    </header>
+    </style>
+      
+  </h1>
+<p style="font-size: 1.8em; color: wheat; margin-bottom: 20px;">
+  A journey through my skills, projects, and aspirations.
+</p>
   
-    </section>
-    <!--get in touch-->
-    <h3>GET IN TOUCH WITH ME</h3>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required placeholder="Enter your name">
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required placeholder="joe@gmail">
-    <br>
-    <label for="phone number">phone number:</label> 
-    <input type="tel" id="phone" name="phone" required placeholder="070000000">
-    <br>
-    <label for ="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-     <br>
-    <button type="submit" onclick="handleSubmit()">Submit</button>
+    <nav style="position: absolute; top: 10px; left: 10px; text-align: left;">
+      <div style="display: inline-block;"></div>
+      <button style="background-color: mediumpurple; color: white; font-size: 1.2em; padding: 10px 20px; border: none; cursor: pointer;">
+        Menu
+      </button>
+      <div style="display: none; position: absolute; background-color: black; color: wheat; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); z-index: 1; text-align: left; min-width: 160px; margin-top: 5px;"></div>
+        <a href="index.html" style="color: blue; text-decoration: none; display: block; padding: 10px;">Home</a>
+        <a href="About me .html" style="color: blue; text-decoration: none; display: block; padding: 10px;">About</a>
+        <a href="skills.html" style="color: blue; text-decoration: none; display: block; padding: 10px;">Skills</a>
+        <a href="css/Education .html" style="color: blue; text-decoration: none; display: block; padding: 10px;">Education</a>
+        <a href="resume .html" style="color: blue; text-decoration: none; display: block; padding: 10px;">Resume</a>
+        <a href="#projects" style="color: blue; text-decoration: none; display: block; padding: 10px;">Projects</a>
+      </div>
+      </div>
+    </nav>
     <script>
-      function handleSubmit() {
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const phone = document.getElementById('phone number').value;
-      const message = document.getElementById('message').value;
-     if (name && email && message) {
-        alert(`Form submitted successfully!\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`);
-      } else {
-        alert('Please fill out all required fields.');
-      }
-      }
-    </script>
-    <br>    
-    <button type="button" onclick="window.location.reload();">Cancel</button>
-    </section>
-    <!--contact-->
-  <section id="contact">
-    <h2>Contact Information</h2>
-    <p>
-      <i class="fas fa-envelope" style="color: #1a8dda; font-size: 1.2em; text-decoration:underline;"></i> 
-      <span style="font-weight: bold; color: #333;">Email:</span> 
-      <a href="mailto:wairimumaryanne553@gmail.com" style="text-decoration: underline; color: blue; font-size: 1.1em;">wairimumaryanne553@gmail.com</a>
+      const menuButton = document.querySelector('nav button');
+      const dropdown = menuButton.nextElementSibling;
 
-    </p>
-    <p>
-      <i class="fas fa-globe" style="color: #1a8dda; font-size: 1.2em;"></i> 
-      <span style="font-weight: bold; color: #333;">Website:</span> 
-     <a href="https://github.com/annagif951" target="_blank" style="text-decoration: underline; color: blue; font-size: 1.1em;">maryannewairimu.github.io/portfolio</a>
-    </p>
+      menuButton.addEventListener('click', () => {
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+      });
 
-    <p><i class="fas fa-phone" style="color: #1a8dda; font-size: 1.2em;"></i> 
-    <span style="font-weight: bold; color: #333;">Phone:</span> 
-    <a href="tel:0742942392" style="text-decoration: underline; color: blue;">0742942392</a>
-    </p>
-    <p>
-      <i class="fas fa-map-marker-alt" style="color: black; font-size: 1.2em;"></i> 
-      <span style="font-weight: bold; color: #333;">Location:</span> 
-      <span style="color: black; font-size: 1.1em;">Nairobi, Kenya</span>
-    </p>
-    <h2>Social media handles</h2>
-    <a href="https://www.linkedin.com/in/maryanne-wairimu-4b0a1b1b8/" target="_blank" style="text-decoration: none; color: blue; font-size: 1.2em;">
-      <i class="fab fa-linkedin" style="font-size: 2em; color: #0077b5;"></i>
-    </a><br>
-    <a href="https://github.com/annagif951" target="_blank" style="text-decoration: underline; color: blue; font-size: 1.2em;">GitHub</a>
+      document.addEventListener('click', (event) => {
+      if (!menuButton.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+      });
+    </script>  
     <br>
-    <a href="https://twitter.com/MaryanneWairimu" target="_blank" style="text-decoration: underline; color: blue; font-size: 1.2em;">Twitter</a><br>
-    <a href="https://www.instagram.com/anna_thee_lady_boss?igshid=MWZ4aG5nbXBpZGFlYw==" target="_blank" style="text-decoration: underline; color: blue; font-size: 1.2em;">Instagram</a><br>
+    <br>
+    <br>
+    <br>    
+    <br>
+    <br>
+    <!--projects-->
+    <section style="text-align: center; margin: 20px;">
+      <h2 style="color: blue;">My Projects</h2>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <div style="background-color: black; color: wheat; padding: 20px; margin: 10px; border-radius: 10px; width: 300px;">
+          <h3>Project 1</h3>
+            <p>Description of Project 1. This project showcases my expertise in HTML, including semantic structure, accessibility, and responsive design principles.</p>
+          <a href="https://github.com/annagif951/new-html-doc" style="color:blue; text-decoration: none;">View Project</a>
+        </div>
+        <div style="background-color: black; color: wheat; padding: 20px; margin: 10px; border-radius: 10px; width: 300px;">
+          <h3>Project 2</h3>
+            <p>Desription of Project 2. This project involves creating and managing databases using SQL and MongoDB, showcasing my expertise in database design, querying, and optimization.</p>
+          <a href="https://github.com/PLP-Database-Design/wk-3a-annagif951" style="color: blue; text-decoration: none;">View Project</a>
+        </div>
+        <div style="background-color: black; color: wheat; padding: 20px; margin: 10px; border-radius: 10px; width: 300px;">
+          <h3>Project 3</h3>
+            <p>Description of Project 3. This project demonstrates my skills in Python, including data analysis, web scraping, and automation.</p>
+          <a href="https://github.com/annagif951/python-calculator" style="color: blue; text-decoration: none;">View Project</a>
+        </div>
+      </div> 
+      <br>  
+      <br>
+      <br>
+      <br>
+      <br>
+    <!-- contact form -->
+    <section style="text-align: center; margin: 20px;">
+    <h2 style="color: blue;">Contact Me</h2>
+    <p style="color: wheat; font-size: 1.2em;">I would love to hear from you! Please fill out the form below to get in touch.</p>
+      <form action="https://formspree.io/f/xeoarzna" method="POST" style="max-width: 600px; margin: auto;">
+        <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none; background-color: #f0f0f0;">
+        <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none; background-color: #f0f0f0;">
+        <textarea name="message" rows="5" placeholder="Your Message" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none; background-color: #f0f0f0;"></textarea>
+        <button type="submit" style="background-color: blue; color: white; font-size: 1.2em; padding: 10px 20px; border-radius: 5px; border: none;">Send Message</button>
+        <button type="reset" style="background-color: blue; color: white; font-size: 1.2em; padding: 10px 20px; border-radius: 5px; border: none;">Reset</button>
+      </form>
+      <br>
+      <br>
+      <br>  
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!--footer-->
+      <p style="font-size: 1.2em; color: wheat; margin-top: 20px;">&copy; 2023 Maryanne. All rights reserved.</p>
+      <p style="font-size: 1.2em; color: wheat;">Follow me on:</p> 
+      <a href="https://github.com/annagif951" target="_blank" style="color: wheat; text-decoration: none; margin: 0 10px;">GitHub</a>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub" style="width: 30px; height: 30px; margin: 0 10px;"> 
+      <a href="https://linkedin.com" target="_blank" style="color: wheat; text-decoration: none; margin: 0 10px;">LinkedIn</a>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px; margin: 0 10px;">
+      <a href="https://twitter.com" target="_blank" style="color: wheat; text-decoration: none; margin: 0 10px;">Twitter</a>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter" style="width: 30px; height: 30px; margin: 0 10px;">
+      <a href="http" target="_blank" style="color: wheat; text-decoration: none; margin: 0 10px;">Instagram</a>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" style="width: 30px; height: 30px; margin: 0 10px;">
+      <a href="https://facebook.com" target="_blank" style="color: wheat; text-decoration: none; margin: 0 10px;">Facebook</a>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook" style="width: 30px; height: 30px; margin: 0 10px;">
+      <a href="http://YouTube.com" target="_blank" style="color: wheat; text-decoration: none; margin: 0 10px;">YouTube</a>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube" style="width: 30px; height: 30px; margin: 0 10px;">
+      <a href="http://pinterest.com" target="_blank" style="color: wheat; text-decoration: none; margin: 0 10px;">Pinterest</a>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/pinterest.png" alt="Pinterest" style="width: 30px; height: 30px; margin: 0 10px;">
 
-  
-  </section>
-  <!--footer-->
- <footer>
-    <p style="text-align: center; font-size: 1.1em; color: #fff; background-color: green; padding: 10px; margin: 0;">
-      &copy; 2025 <span style="font-weight: bold;">Maryann Powered by Youngtech innovations limited</span>. All Rights Reserved.
+    </section>
 
-    </p>
-  </footer>
-  <script src="script.js"></script> 
-
-</body>
-</html> 
-
-
-
-
-
+    </body>
+</html>
+<!-- End of HTML -->
